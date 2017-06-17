@@ -1,0 +1,41 @@
+heat_template_version: 2013-05-23
+
+description: Simple template to deploy a single compute instance
+
+resources:
+  my_instance:
+    type: OS::Nova::Server
+    properties:
+      key_name: IvanRom
+      image: ubuntu-trusty
+      flavor: m1.small
+      networks:
+        - network: local
+      user_data: |
+        #!/bin/bash
+        sudo chsh -s /bin/bash ec2-user
+        cd /home/ec2-user
+        echo "sudo apt-get update" >> /tmp/log
+        sudo apt-get update
+        echo "sudo apt-get -y install python-pip" >> /tmp/log
+        sudo apt-get -y install python-pip
+        echo "sudo apt-get install git" >> /tmp/log
+        sudo apt-get install gite 
+        echo "sudo pip install rasa_nlu" >> /tmp/log
+        sudo pip install rasa_nlu
+        echo "sudo git clone https://github.com/IvanR92/RASA.git" >> /tmp/log
+        sudo git clone https://github.com/IvanR92/RASA.git
+        echo "cd rasa_nlu" >> /tmp/log
+        cd rasa_nlu
+        echo "pip install -r requirements.txt" >> /tmp/log
+        sudo pip install -r requirements.txt
+        echo "sudo python setup.py install" >> /tmp/log
+        sudo python setup.py install
+        echo "pip install -U spacy" >> /tmp/log
+        sudo pip install -U spacy
+        echo "sudo python -m spacy download en" >> /tmp/log
+        sudo python -m spacy download en
+        echo "python -m rasa_nlu.server -c config_spacy.json --server_model_dirs=./model_YYYYMMDD-HHMMSS" >> /tmp/log
+        sudo python -m rasa_nlu.server -c config_spacy.json --server_model_dirs=./model_YYYYMMDD-HHMMSS
+
+
