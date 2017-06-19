@@ -1,0 +1,600 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "go to the black cell", 
+        "intent": "move", 
+        "entities": [
+          {
+            "start": 10, 
+            "end": 15, 
+            "value": "black", 
+            "entity": "black"
+          }, 
+          {
+            "start": 16, 
+            "end": 20, 
+            "value": "cell", 
+            "entity": "cell"
+          }
+        ]
+      }, 
+      {
+        "text": "travel to the white cell", 
+        "intent": "move", 
+        "entities": [
+          {
+            "start": 14, 
+            "end": 19, 
+            "value": "white", 
+            "entity": "white"
+          }, 
+          {
+            "start": 20, 
+            "end": 24, 
+            "value": "cell", 
+            "entity": "cell"
+          }
+        ]
+      }, 
+      {
+        "text": "run to the white cell", 
+        "intent": "move", 
+        "entities": [
+          {
+            "start": 11, 
+            "end": 16, 
+            "value": "white", 
+            "entity": "white"
+          }, 
+          {
+            "start": 17, 
+            "end": 21, 
+            "value": "cell", 
+            "entity": "cell"
+          }
+        ]
+      }, 
+      {
+        "text": "move to the black cell", 
+        "intent": "move", 
+        "entities": [
+          {
+            "start": 12, 
+            "end": 17, 
+            "value": "black", 
+            "entity": "black"
+          }, 
+          {
+            "start": 18, 
+            "end": 22, 
+            "value": "cell", 
+            "entity": "cell"
+          }
+        ]
+      }, 
+      {
+        "text": "move into a white cell", 
+        "intent": "move", 
+        "entities": [
+          {
+            "start": 12, 
+            "end": 17, 
+            "value": "white", 
+            "entity": "white"
+          }, 
+          {
+            "start": 18, 
+            "end": 22, 
+            "value": "cell", 
+            "entity": "cell"
+          }
+        ]
+      }, 
+      {
+        "text": "run into a black cell", 
+        "intent": "move", 
+        "entities": [
+          {
+            "start": 11, 
+            "end": 16, 
+            "value": "black", 
+            "entity": "black"
+          }, 
+          {
+            "start": 17, 
+            "end": 21, 
+            "value": "cell", 
+            "entity": "cell"
+          }
+        ]
+      }, 
+      {
+        "text": "travel into a black cell", 
+        "intent": "move", 
+        "entities": [
+          {
+            "start": 14, 
+            "end": 19, 
+            "value": "black", 
+            "entity": "black"
+          }, 
+          {
+            "start": 20, 
+            "end": 24, 
+            "value": "cell", 
+            "entity": "cell"
+          }
+        ]
+      }, 
+      {
+        "text": " move to the obstacle", 
+        "intent": "move", 
+        "entities": [
+          {
+            "start": 13, 
+            "end": 21, 
+            "value": "obstacle", 
+            "entity": "let"
+          }
+        ]
+      }, 
+      {
+        "text": "move to the let", 
+        "intent": "move", 
+        "entities": [
+          {
+            "start": 12, 
+            "end": 15, 
+            "value": "let", 
+            "entity": "let"
+          }
+        ]
+      }, 
+      {
+        "text": "run to the barrier", 
+        "intent": "move", 
+        "entities": [
+          {
+            "start": 11, 
+            "end": 18, 
+            "value": "barrier", 
+            "entity": "let"
+          }
+        ]
+      }, 
+      {
+        "text": "run to the let", 
+        "intent": "move", 
+        "entities": [
+          {
+            "start": 10, 
+            "end": 14, 
+            "value": " let", 
+            "entity": "let"
+          }
+        ]
+      }, 
+      {
+        "text": "move straight", 
+        "intent": "move", 
+        "entities": [
+          {
+            "start": 5, 
+            "end": 13, 
+            "value": "straight", 
+            "entity": "forward"
+          }
+        ]
+      }, 
+      {
+        "text": "move left", 
+        "intent": "move", 
+        "entities": [
+          {
+            "start": 5, 
+            "end": 9, 
+            "value": "left", 
+            "entity": "left"
+          }
+        ]
+      }, 
+      {
+        "text": "run back", 
+        "intent": "move", 
+        "entities": [
+          {
+            "start": 4, 
+            "end": 8, 
+            "value": "back", 
+            "entity": "back"
+          }
+        ]
+      }, 
+      {
+        "text": "run straight", 
+        "intent": "move", 
+        "entities": [
+          {
+            "start": 4, 
+            "end": 12, 
+            "value": "straight", 
+            "entity": "straight"
+          }
+        ]
+      }, 
+      {
+        "text": "goat", 
+        "intent": "move", 
+        "entities": []
+      }, 
+      {
+        "text": "travel right", 
+        "intent": "move", 
+        "entities": [
+          {
+            "start": 7, 
+            "end": 12, 
+            "value": "right", 
+            "entity": "right"
+          }
+        ]
+      }, 
+      {
+        "text": "travel back", 
+        "intent": "move", 
+        "entities": [
+          {
+            "start": 7, 
+            "end": 11, 
+            "value": "back", 
+            "entity": "back"
+          }
+        ]
+      }, 
+      {
+        "text": "get going", 
+        "intent": "move", 
+        "entities": []
+      }, 
+      {
+        "text": "get going left", 
+        "intent": "move", 
+        "entities": [
+          {
+            "start": 10, 
+            "end": 14, 
+            "value": "left", 
+            "entity": "left"
+          }
+        ]
+      }, 
+      {
+        "text": "stop", 
+        "intent": "stop", 
+        "entities": []
+      }, 
+      {
+        "text": "dont move", 
+        "intent": "stop", 
+        "entities": []
+      }, 
+      {
+        "text": "don't move", 
+        "intent": "stop", 
+        "entities": []
+      }, 
+      {
+        "text": "do not move", 
+        "intent": "stop", 
+        "entities": []
+      }, 
+      {
+        "text": "stay", 
+        "intent": "stop", 
+        "entities": []
+      }, 
+      {
+        "text": "come to a stop", 
+        "intent": "stop", 
+        "entities": []
+      }, 
+      {
+        "text": "travel to the obstacle", 
+        "intent": "move", 
+        "entities": [
+          {
+            "start": 14, 
+            "end": 22, 
+            "value": "obstacle", 
+            "entity": "let"
+          }
+        ]
+      }, 
+      {
+        "text": "travel to the barrier", 
+        "intent": "move", 
+        "entities": [
+          {
+            "start": 14, 
+            "end": 21, 
+            "value": "barrier", 
+            "entity": "let"
+          }
+        ]
+      }, 
+      {
+        "text": "turn on the engine", 
+        "intent": "activate", 
+        "entities": [
+          {
+            "start": 12, 
+            "end": 18, 
+            "value": "engine", 
+            "entity": "engine"
+          }
+        ]
+      }, 
+      {
+        "text": "activate the engine", 
+        "intent": "activate", 
+        "entities": [
+          {
+            "start": 13, 
+            "end": 19, 
+            "value": "engine", 
+            "entity": "engine"
+          }
+        ]
+      }, 
+      {
+        "text": "turn off the engine", 
+        "intent": "turn off", 
+        "entities": [
+          {
+            "start": 13, 
+            "end": 19, 
+            "value": "engine", 
+            "entity": "engine"
+          }
+        ]
+      }, 
+      {
+        "text": "switch off engine", 
+        "intent": "turn off", 
+        "entities": [
+          {
+            "start": 11, 
+            "end": 17, 
+            "value": "engine", 
+            "entity": "engine"
+          }
+        ]
+      }, 
+      {
+        "text": "shut off engine", 
+        "intent": "turn off", 
+        "entities": [
+          {
+            "start": 9, 
+            "end": 15, 
+            "value": "engine", 
+            "entity": "engine"
+          }
+        ]
+      }, 
+      {
+        "text": "ungear the engine", 
+        "intent": "turn off", 
+        "entities": [
+          {
+            "start": 11, 
+            "end": 17, 
+            "value": "engine", 
+            "entity": "engine"
+          }
+        ]
+      }, 
+      {
+        "text": "switch on engine", 
+        "intent": "activate", 
+        "entities": [
+          {
+            "start": 10, 
+            "end": 16, 
+            "value": "engine", 
+            "entity": "engine"
+          }
+        ]
+      }, 
+      {
+        "text": "move forward ", 
+        "intent": "move", 
+        "entities": [
+          {
+            "start": 5, 
+            "end": 12, 
+            "value": "forward", 
+            "entity": "forward"
+          }
+        ]
+      }, 
+      {
+        "text": "robot number 1 move to robot number 2 ", 
+        "intent": "move to", 
+        "entities": [
+          {
+            "start": 6, 
+            "end": 14, 
+            "value": "number 1", 
+            "entity": "id1"
+          }, 
+          {
+            "start": 29, 
+            "end": 37, 
+            "value": "number 2", 
+            "entity": "id2"
+          }
+        ]
+      }, 
+      {
+        "text": "robot 1 go to robot 2", 
+        "intent": "move to", 
+        "entities": [
+          {
+            "start": 0, 
+            "end": 7, 
+            "value": "robot 1", 
+            "entity": "id1"
+          }, 
+          {
+            "start": 14, 
+            "end": 21, 
+            "value": "robot 2", 
+            "entity": "id2"
+          }
+        ]
+      }, 
+      {
+        "text": "robot 1 move to robot 2 and turn back", 
+        "intent": "move to", 
+        "entities": [
+          {
+            "start": 0, 
+            "end": 7, 
+            "value": "robot 1", 
+            "entity": "id1"
+          }, 
+          {
+            "start": 16, 
+            "end": 23, 
+            "value": "robot 2", 
+            "entity": "id2"
+          }, 
+          {
+            "start": 28, 
+            "end": 37, 
+            "value": "turn back", 
+            "entity": "move backward"
+          }
+        ]
+      }, 
+      {
+        "text": "robot number 2 run to robot number 1 and turn on 90 degrees", 
+        "intent": "move to", 
+        "entities": [
+          {
+            "start": 6, 
+            "end": 14, 
+            "value": "number 2", 
+            "entity": "id2"
+          }, 
+          {
+            "start": 28, 
+            "end": 36, 
+            "value": "number 1", 
+            "entity": "id1"
+          }, 
+          {
+            "start": 49, 
+            "end": 51, 
+            "value": "90", 
+            "entity": "90"
+          }, 
+          {
+            "start": 52, 
+            "end": 59, 
+            "value": "degrees", 
+            "entity": "angle"
+          }, 
+          {
+            "start": 41, 
+            "end": 48, 
+            "value": "turn on", 
+            "entity": "turn"
+          }
+        ]
+      }, 
+      {
+        "text": "robot 2 go to robot 1 and turn left", 
+        "intent": "move to", 
+        "entities": [
+          {
+            "start": 26, 
+            "end": 30, 
+            "value": "turn", 
+            "entity": "turn"
+          }, 
+          {
+            "start": 31, 
+            "end": 35, 
+            "value": "left", 
+            "entity": "left"
+          }, 
+          {
+            "start": 14, 
+            "end": 21, 
+            "value": "robot 1", 
+            "entity": "id1"
+          }, 
+          {
+            "start": 0, 
+            "end": 7, 
+            "value": "robot 2", 
+            "entity": "id2"
+          }
+        ]
+      }, 
+      {
+        "text": "robot 1 run to robot 2 and stay", 
+        "intent": "move to", 
+        "entities": [
+          {
+            "start": 0, 
+            "end": 7, 
+            "value": "robot 1", 
+            "entity": "id1"
+          }, 
+          {
+            "start": 15, 
+            "end": 22, 
+            "value": "robot 2", 
+            "entity": "id2"
+          }, 
+          {
+            "start": 27, 
+            "end": 31, 
+            "value": "stay", 
+            "entity": "stop"
+          }
+        ]
+      }, 
+      {
+        "text": "robot 2 come to robot 1 and stop", 
+        "intent": "move to", 
+        "entities": [
+          {
+            "start": 28, 
+            "end": 32, 
+            "value": "stop", 
+            "entity": "stop"
+          }, 
+          {
+            "start": 16, 
+            "end": 23, 
+            "value": "robot 1", 
+            "entity": "id1"
+          }, 
+          {
+            "start": 0, 
+            "end": 7, 
+            "value": "robot 2", 
+            "entity": "id2"
+          }
+        ]
+      }
+    ], 
+    "entity_examples": [], 
+    "intent_examples": []
+  }
+}

@@ -1,0 +1,12 @@
+{
+    "trained_at": "20170612-202818", 
+    "pipeline": [
+        "nlp_spacy", 
+        "ner_crf"
+    ], 
+    "entity_extractor_crf": "ner", 
+    "training_data": "training_data.json", 
+    "spacy_model_name": "en", 
+    "language": "en", 
+    "rasa_nlu_version": "0.8.5"
+}
